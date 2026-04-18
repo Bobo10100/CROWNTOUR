@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html xml:lang="ru" lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="theme-color" content="#dc143c">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta name="robots" content="index, follow" />
+    <meta name="keywords" content="Туризм в Таджикистане Отдых в Таджикистане Путешествия по Таджикистану Достопримечательности Таджикистана Культура Таджикистана Природа Таджикистана Горы Таджикистана Озера Таджикистана" />
+    <meta name="description" content="Исследуйте Таджикистан с профессиональными гидами и уникальными маршрутами от CROWNTOUR. Забронируйте тур и откройте для себя всю красоту этой страны" />
+    
+    <title>Поиск Туров по Таджикистану - Уникальные Маршруты от CROWNTOUR</title>
+    
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏔</text></svg>">
+    
+    <link rel="stylesheet" href="kh.css?v=7.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="header__wrapper">
+                    <a href="/" class="header__logo">
+                        <span class="logo-text">CROWN<span class="logo-accent">TOUR</span></span>
+                        <span class="logo-subtitle" data-i18n="logo.subtitle">Таджикистан</span>
+                    </a>
+                    
+                    <nav class="header__nav">
+                        <ul class="nav__list">
+                            <li><a href="#tours" class="nav__link" data-i18n="nav.tours">Туры</a></li>
+                            <li><a href="#regions" class="nav__link" data-i18n="nav.regions">Регионы</a></li>
+                            <li><a href="#objects" class="nav__link" data-i18n="nav.objects">Достопримечательности</a></li>
+                            <li><a href="blog.html" class="nav__link" data-i18n="nav.blog">Блог</a></li>
+                            <li><a href="faq.html" class="nav__link" data-i18n="nav.faq">Вопросы</a></li>
+                        </ul>
+                    </nav>
+                    
+                    <div class="header__actions">
+                        <div class="language-switcher">
+                            <button class="language-switcher__btn" id="langBtn">
+                                <span class="language-switcher__current">RU</span>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M4 6l4 4 4-4"/>
+                                </svg>
+                            </button>
+                            <ul class="language-switcher__dropdown" id="langDropdown">
+                                <li><a href="#" data-lang="ru" class="language-switcher__option active">Русский</a></li>
+                                <li><a href="#" data-lang="en" class="language-switcher__option">English</a></li>
+                                <li><a href="#" data-lang="tg" class="language-switcher__option">Тоҷикӣ</a></li>
+                            </ul>
+                        </div>
+                        <a href="https://wa.me/992002663407" class="header__phone" target="_blank" rel="noopener noreferrer">(+992) 00 266 34 07</a>
+                        <button class="btn btn--primary" data-i18n="btn.select-tour">Подобрать тур</button>
+                        <button class="header__burger" id="mobileMenuBtn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero__pattern"></div>
+        <div class="container">
+            <div class="hero__content">
+                <h1 class="hero__title">
+                    <span data-i18n="hero.title.part1">Откройте</span> <span class="text-accent" data-i18n="hero.title.part2">Таджикистан</span><br>
+                    <span data-i18n="hero.title.part3">с CROWNTOUR</span>
+                </h1>
+                <p class="hero__subtitle" data-i18n="hero.subtitle">Уникальные путешествия по древним городам, величественным горам и кристальным озерам</p>
+                
+                <div class="hero__search">
+                    <form class="search-form">
+                        <input type="text" data-i18n-placeholder="search.placeholder" placeholder="Поиск туров..." class="search-form__input">
+                        <button type="submit" class="search-form__btn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <path d="m21 21-4.35-4.35"></path>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="categories">
+        <div class="container">
+            <div class="categories__grid">
+                <a href="category-lakes.html" class="category-card">
+                    <div class="category-card__image">
+                        <img src="https://eurasia.travel/wp-content/uploads/2024/08/Iskanderkul-Lake-1.jpg" alt="Озера" loading="lazy">
+                    </div>
+                    <h3 class="category-card__title" data-i18n="category.lakes">Озера</h3>
+                    <p class="category-card__count" data-i18n="category.lakes.count">64 тура</p>
+                </a>
+                <a href="category-mountains.html" class="category-card">
+                    <div class="category-card__image">
+                        <img src="https://masterpiecer-images.s3.yandex.net/5f9d17b97ef8100:upscaled" alt="По горам" loading="lazy">
+                    </div>
+                    <h3 class="category-card__title" data-i18n="category.mountains">По горам</h3>
+                    <p class="category-card__count" data-i18n="category.mountains.count">22 тура</p>
+                </a>
+                <a href="category-ethno.html" class="category-card">
+                    <div class="category-card__image">
+                        <img src="https://www.mountain.ru/article/article_img/6855/f_4.jpg" alt="Этно-туры" loading="lazy">
+                    </div>
+                    <h3 class="category-card__title" data-i18n="category.ethno">Этно-туры</h3>
+                    <p class="category-card__count" data-i18n="category.ethno.count">27 туров</p>
+                </a>
+                <a href="category-fan.html" class="category-card">
+                    <div class="category-card__image">
+                        <img src="https://avatars.mds.yandex.net/i?id=3372c30112ca130b41d3a48bcc0dafeb_l-5250028-images-thumbs&n=13" alt="Фанские горы" loading="lazy">
+                    </div>
+                    <h3 class="category-card__title" data-i18n="category.fan">Фанские горы</h3>
+                    <p class="category-card__count" data-i18n="category.fan.count">43 тура</p>
+                </a>
+                <a href="category-trekking.html" class="category-card">
+                    <div class="category-card__image">
+                        <img src="https://www.centralasia-travel.com/uploads/gallery/74/fans_30.jpg" alt="Треккинг" loading="lazy">
+                    </div>
+                    <h3 class="category-card__title" data-i18n="category.trekking">Треккинг</h3>
+                    <p class="category-card__count" data-i18n="category.trekking.count">9 туров</p>
+                </a>
+                <a href="category-pamir.html" class="category-card">
+                    <div class="category-card__image">
+                        <img src="https://avatars.mds.yandex.net/i?id=a77282fdc6473213b56f160acce71de3_l-4944757-images-thumbs&n=13" alt="Памирский тракт" loading="lazy">
+                    </div>
+                    <h3 class="category-card__title" data-i18n="category.pamir">Памирский тракт</h3>
+                    <p class="category-card__count" data-i18n="category.pamir.count">27 туров</p>
+                </a>
+                <a href="category-silk.html" class="category-card">
+                    <div class="category-card__image">
+                        <img src="https://ic.pics.livejournal.com/euster/52073721/35150/35150_900.jpg" alt="Шелковый путь" loading="lazy">
+                    </div>
+                    <h3 class="category-card__title" data-i18n="category.silk">Шелковый путь</h3>
+                    <p class="category-card__count" data-i18n="category.silk.count">30 туров</p>
+                </a>
+                <a href="category-ancient.html" class="category-card">
+                    <div class="category-card__image">
+                        <img src="https://avatars.mds.yandex.net/i?id=98a307998ef4f8f8018748d30bbc62ac_l-4073135-images-thumbs&n=13" alt="Древние города" loading="lazy">
+                    </div>
+                    <h3 class="category-card__title" data-i18n="category.ancient">Древние города</h3>
+                    <p class="category-card__count" data-i18n="category.ancient.count">50 туров</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Regions -->
+    <section class="regions" id="regions">
+        <div class="container">
+            <h2 class="section-title" data-i18n="regions.title">Области Таджикистана</h2>
+            <div class="regions__grid">
+                <a href="region-gba.html" class="region-card">
+                    <div class="region-card__image">
+                        <img src="https://vecherka.tj/wp-content/uploads/2016/08/0022.jpg" alt="Памир, Горно-Бадахшанская область" loading="lazy">
+                        <div class="region-card__overlay"></div>
+                        <div class="region-card__pattern"></div>
+                    </div>
+                    <h3 class="region-card__title" data-i18n="region.gba">Горно-Бадахшанская автономная область</h3>
+                    <p class="region-card__description" data-i18n="region.gba.desc">Величественный Памир с его уникальной природой</p>
+                </a>
+                <a href="region-rrp.html" class="region-card">
+                    <div class="region-card__image">
+                        <img src="https://avatars.mds.yandex.net/i?id=406635ef40e42b5cd24c3fad1cd55460c8a06259-12920861-images-thumbs&n=13" alt="Душанбе, Районы республиканского подчинения" loading="lazy">
+                        <div class="region-card__overlay"></div>
+                        <div class="region-card__pattern"></div>
+                    </div>
+                    <h3 class="region-card__title" data-i18n="region.rrp">Районы республиканского подчинения</h3>
+                    <p class="region-card__description" data-i18n="region.rrp.desc">Столичный регион с богатой историей</p>
+                </a>
+                <a href="region-sogd.html" class="region-card">
+                    <div class="region-card__image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Historical_Museum_of_Sughd%2C_Khujand_%28entrance%29.jpg/1200px-Historical_Museum_of_Sughd%2C_Khujand_%28entrance%29.jpg" alt="Согдийская область, древние города" loading="lazy">
+                        <div class="region-card__overlay"></div>
+                        <div class="region-card__pattern"></div>
+                    </div>
+                    <h3 class="region-card__title" data-i18n="region.sogd">Согдийская область</h3>
+                    <p class="region-card__description" data-i18n="region.sogd.desc">Древние города и культурное наследие</p>
+                </a>
+                <a href="region-khatlon.html" class="region-card">
+                    <div class="region-card__image">
+                        <img src="https://asiaplustj.info/sites/default/files/articles/264499/7%20%D0%A5%D1%83%D0%BB%D1%8C%D0%B1%D1%83%D0%BA.jpg" alt="Хатлонская область" loading="lazy">
+                        <div class="region-card__overlay"></div>
+                        <div class="region-card__pattern"></div>
+                    </div>
+                    <h3 class="region-card__title" data-i18n="region.khatlon">Хатлонская область</h3>
+                    <p class="region-card__description" data-i18n="region.khatlon.desc">Традиции и современность</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tours -->
+    <section class="tours" id="tours">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="tours.title">Популярные туры</h2>
+                <a href="#all-tours" class="section-link" data-i18n="tours.view-all">Смотреть все →</a>
+            </div>
+            
+            <div class="tours__grid">
+                <a href="tour-pamir.html" class="tour-card">
+                    <div class="tour-card__badge tour-card__badge--featured" data-i18n="badge.recommended">Рекомендуем</div>
+                    <div class="tour-card__image">
+                        <img src="https://ucare.timepad.ru/883e42a3-34bb-42c4-b044-f136735d90e8/-/preview/" alt="Памирский тракт" loading="lazy">
+                        <div class="tour-card__overlay"></div>
+                    </div>
+                    <div class="tour-card__content">
+                        <h3 class="tour-card__title" data-i18n="tour.pamir.title">Тур по Памирскому тракту</h3>
+                        <p class="tour-card__description" data-i18n="tour.pamir.desc">Путешествие по крыше мира</p>
+                        <div class="tour-card__meta">
+                            <span class="tour-card__duration" data-i18n="tour.duration.8">8 дней</span>
+                        </div>
+                        <div class="tour-card__tags">
+                            <span class="tag" data-i18n="tag.lakes">#Озера</span>
+                            <span class="tag" data-i18n="tag.pamir">#Памирский тракт</span>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="tour-penjikent.html" class="tour-card">
+                    <div class="tour-card__badge tour-card__badge--new" data-i18n="badge.new">Новый</div>
+                    <div class="tour-card__image">
+                        <img src="https://artuch.tj/wp-content/uploads/2017/10/845534619.jpg" alt="Пенджикент и Худжанд" loading="lazy">
+                        <div class="tour-card__overlay"></div>
+                    </div>
+                    <div class="tour-card__content">
+                        <h3 class="tour-card__title" data-i18n="tour.penjikent.title">Тур по Пенджикенту и Худжанду</h3>
+                        <p class="tour-card__description" data-i18n="tour.penjikent.desc">Древние города Согда</p>
+                        <div class="tour-card__meta">
+                            <span class="tour-card__duration" data-i18n="tour.duration.5">5 дней</span>
+                        </div>
+                        <div class="tour-card__tags">
+                            <span class="tag" data-i18n="tag.ancient">#Древние города</span>
+                            <span class="tag" data-i18n="tag.silk">#Шелковый путь</span>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="tour-cultural.html" class="tour-card">
+                    <div class="tour-card__badge tour-card__badge--featured" data-i18n="badge.impressive">Впечатляющий</div>
+                    <div class="tour-card__image">
+                        <img src="https://avatars.mds.yandex.net/get-altay/11398069/2a00000190b16a35888a51350950c16e1b1e/XXL_height" alt="Культурный тур" loading="lazy">
+                        <div class="tour-card__overlay"></div>
+                    </div>
+                    <div class="tour-card__content">
+                        <h3 class="tour-card__title" data-i18n="tour.cultural.title">Культурный тур по Согдийской области</h3>
+                        <p class="tour-card__description" data-i18n="tour.cultural.desc">История и культура</p>
+                        <div class="tour-card__meta">
+                            <span class="tour-card__duration" data-i18n="tour.duration.6">6 дней</span>
+                        </div>
+                        <div class="tour-card__tags">
+                            <span class="tag" data-i18n="tag.culture">#Культура</span>
+                            <span class="tag" data-i18n="tag.history">#История</span>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="tour-bike.html" class="tour-card">
+                    <div class="tour-card__badge tour-card__badge--new" data-i18n="badge.new">Новый</div>
+                    <div class="tour-card__image">
+                        <img src="https://avatars.mds.yandex.net/i?id=7646d488b188c5a3ecea02866534b79f_l-5319478-images-thumbs&n=13" alt="Велотур по Памиру" loading="lazy">
+                        <div class="tour-card__overlay"></div>
+                    </div>
+                    <div class="tour-card__content">
+                        <h3 class="tour-card__title" data-i18n="tour.bike.title">Велотур по Памиру</h3>
+                        <p class="tour-card__description" data-i18n="tour.bike.desc">Активное приключение</p>
+                        <div class="tour-card__meta">
+                            <span class="tour-card__duration" data-i18n="tour.duration.10">10 дней</span>
+                        </div>
+                        <div class="tour-card__tags">
+                            <span class="tag" data-i18n="tag.bike">#Велотуры</span>
+                            <span class="tag" data-i18n="tag.pamir">#Памир</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="whatsapp-cta-block" style="margin-top: 2.5rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+                <h3 class="whatsapp-cta-block__title" data-i18n="common.tourNotFound">Не нашли подходящий тур?</h3>
+                <p class="whatsapp-cta-block__text" data-i18n="common.tourNotFoundCta">Обратитесь к нам в WhatsApp — подберём тур специально для вас!</p>
+                <a href="https://wa.me/992002663407" target="_blank" rel="noopener noreferrer" class="whatsapp-cta-block__link">📱 WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Создай свой тур -->
+    <section class="tour-builder" id="create-tour">
+        <div class="container">
+            <h2 class="section-title" data-i18n="builder.title">Создай свой тур</h2>
+            <p class="tour-builder__intro" data-i18n="builder.intro">Выберите направление, длительность, тип тура и количество участников — итоговая сумма рассчитается автоматически.</p>
+            
+            <form class="tour-builder__form" id="tourBuilderForm">
+                <div class="tour-builder__row">
+                    <label class="tour-builder__label" for="builderDirection" data-i18n="builder.direction">1. Направление</label>
+                    <select class="tour-builder__select" id="builderDirection" name="direction" required>
+                        <option value="" data-i18n="builder.directionPlaceholder">— Выберите направление —</option>
+                        <optgroup data-i18n-label="builder.optgroupTours" label="Туры">
+                            <option value="pamir" data-i18n="tour.pamir.title">Тур по Памирскому тракту</option>
+                            <option value="penjikent" data-i18n="tour.penjikent.title">Тур по Пенджикенту и Худжанду</option>
+                            <option value="cultural" data-i18n="tour.cultural.title">Культурный тур по Согдийской области</option>
+                            <option value="bike" data-i18n="tour.bike.title">Велотур по Памиру</option>
+                        </optgroup>
+                        <optgroup data-i18n-label="builder.optgroupRegions" label="Области">
+                            <option value="gba" data-i18n="region.gba">Горно-Бадахшанская автономная область</option>
+                            <option value="rrp" data-i18n="region.rrp">Районы республиканского подчинения</option>
+                            <option value="sogd" data-i18n="region.sogd">Согдийская область</option>
+                            <option value="khatlon" data-i18n="region.khatlon">Хатлонская область</option>
+                        </optgroup>
+                        <optgroup data-i18n-label="builder.optgroupCategories" label="Категории">
+                            <option value="lakes" data-i18n="category.lakes">Озера</option>
+                            <option value="mountains" data-i18n="category.mountains">По горам</option>
+                            <option value="ethno" data-i18n="category.ethno">Этно-туры</option>
+                            <option value="fan" data-i18n="category.fan">Фанские горы</option>
+                            <option value="trekking" data-i18n="category.trekking">Треккинг</option>
+                            <option value="cat-pamir" data-i18n="category.pamir">Памирский тракт</option>
+                            <option value="silk" data-i18n="category.silk">Шелковый путь</option>
+                            <option value="ancient" data-i18n="category.ancient">Древние города</option>
+                        </optgroup>
+                    </select>
+                </div>
+                
+                <div class="tour-builder__row">
+                    <label class="tour-builder__label" for="builderDays" data-i18n="builder.days">2. Количество дней</label>
+                    <select class="tour-builder__select" id="builderDays" name="days" required>
+                        <option value="3" data-i18n="builder.days.3">3 дня</option>
+                        <option value="4" data-i18n="builder.days.4">4 дня</option>
+                        <option value="5" selected data-i18n="builder.days.5">5 дней</option>
+                        <option value="6" data-i18n="builder.days.6">6 дней</option>
+                        <option value="7" data-i18n="builder.days.7">7 дней</option>
+                        <option value="8" data-i18n="builder.days.8">8 дней</option>
+                        <option value="9" data-i18n="builder.days.9">9 дней</option>
+                        <option value="10" data-i18n="builder.days.10">10 дней</option>
+                        <option value="12" data-i18n="builder.days.12">12 дней</option>
+                        <option value="14" data-i18n="builder.days.14">14 дней</option>
+                        <option value="21" data-i18n="builder.days.21">21 день</option>
+                    </select>
+                </div>
+                
+                <div class="tour-builder__row">
+                    <span class="tour-builder__label" data-i18n="builder.type">3. Тип тура</span>
+                    <div class="tour-builder__radio-group">
+                        <label class="tour-builder__radio-wrap">
+                            <input type="radio" name="type" value="simple" checked class="tour-builder__radio"> <span data-i18n="builder.typeSimple">Простой тур</span>
+                        </label>
+                        <label class="tour-builder__radio-wrap">
+                            <input type="radio" name="type" value="vip" class="tour-builder__radio"> <span data-i18n="builder.typeVip">VIP тур</span>
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="tour-builder__row">
+                    <label class="tour-builder__label" for="builderPeople" data-i18n="builder.people">4. Количество людей</label>
+                    <select class="tour-builder__select" id="builderPeople" name="people" required>
+                        <option value="1" data-i18n="builder.people.1">1 человек</option>
+                        <option value="2" selected data-i18n="builder.people.2">2 человека</option>
+                        <option value="3" data-i18n="builder.people.3">3 человека</option>
+                        <option value="4" data-i18n="builder.people.4">4 человека</option>
+                        <option value="5" data-i18n="builder.people.5">5 человек</option>
+                        <option value="6" data-i18n="builder.people.6">6 человек</option>
+                        <option value="8" data-i18n="builder.people.8">8 человек</option>
+                        <option value="10" data-i18n="builder.people.10">10 человек</option>
+                        <option value="12" data-i18n="builder.people.12">12 человек</option>
+                        <option value="15" data-i18n="builder.people.15">15 человек</option>
+                        <option value="20" data-i18n="builder.people.20">20 человек</option>
+                    </select>
+                </div>
+                
+                <div class="tour-builder__result" id="builderResult">
+                    <span class="tour-builder__result-label" data-i18n="builder.result">5. Итог:</span>
+                    <span class="tour-builder__result-value" id="builderTotal">0 $</span>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Attractions / Достопримечательности -->
+    <section class="attractions" id="objects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="attractions.title">Достопримечательности Таджикистана</h2>
+                <p class="section-subtitle" data-i18n="attractions.subtitle">Откройте для себя уникальные места и памятники истории</p>
+            </div>
+            
+            <div class="attractions__grid">
+                <a href="attraction-iskanderkul.html" class="attraction-card">
+                    <div class="attraction-card__image">
+                        <img src="https://asiaplustj.info/sites/default/files/articles/298543/%D0%98%D1%81%D0%BA%D0%B0%D0%BD%D0%B4%D0%B5%D1%80%D0%BA%D1%83%D0%BB%D1%8C.%20%D0%98%D1%81%D1%82%D0%BE%D1%87%D0%BD%D0%B8%D0%BA_%20%40pohod.tj.jpg.png" alt="Искандеркуль" loading="lazy">
+                        <div class="attraction-card__overlay"></div>
+                    </div>
+                    <div class="attraction-card__content">
+                        <h3 class="attraction-card__title" data-i18n="attraction.iskanderkul.title">Искандеркуль</h3>
+                        <p class="attraction-card__description" data-i18n="attraction.iskanderkul.desc">Легендарное высокогорное озеро на высоте 2195 метров</p>
+                        <div class="attraction-card__meta">
+                            <span class="attraction-card__location" data-i18n="attraction.location.fan">Фанские горы</span>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="attraction-penjikent.html" class="attraction-card">
+                    <div class="attraction-card__image">
+                        <img src="https://live.staticflickr.com/65535/54291034578_e0e420ce4f_h.jpg" alt="Древний Пенджикент" loading="lazy">
+                        <div class="attraction-card__overlay"></div>
+                    </div>
+                    <div class="attraction-card__content">
+                        <h3 class="attraction-card__title" data-i18n="attraction.penjikent.title">Древний Пенджикент</h3>
+                        <p class="attraction-card__description" data-i18n="attraction.penjikent.desc">Археологический памятник древнего города на Шелковом пути</p>
+                        <div class="attraction-card__meta">
+                            <span class="attraction-card__location" data-i18n="attraction.location.sogd">Согдийская область</span>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="attraction-khujand.html" class="attraction-card">
+                    <div class="attraction-card__image">
+                        <img src="https://avatars.mds.yandex.net/get-altay/4234174/2a0000018b1e86847d05de9086ac56e00447/orig    " alt="Худжандская крепость" loading="lazy">
+                        <div class="attraction-card__overlay"></div>
+                    </div>
+                    <div class="attraction-card__content">
+                        <h3 class="attraction-card__title" data-i18n="attraction.khujand.title">Худжандская крепость</h3>
+                        <p class="attraction-card__description" data-i18n="attraction.khujand.desc">Древняя крепость и исторический центр города</p>
+                        <div class="attraction-card__meta">
+                            <span class="attraction-card__location" data-i18n="attraction.location.sogd">Согдийская область</span>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="attraction-hissar.html" class="attraction-card">
+                    <div class="attraction-card__image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/%D0%93%D0%B8%D1%81%D1%81%D0%B0%D1%80%D1%81%D0%BA%D0%B0%D1%8F_%D0%BA%D1%80%D0%B5%D0%BF%D0%BE%D1%81%D1%82%D1%8C_03.jpg/1200px-%D0%93%D0%B8%D1%81%D1%81%D0%B0%D1%80%D1%81%D0%BA%D0%B0%D1%8F_%D0%BA%D1%80%D0%B5%D0%BF%D0%BE%D1%81%D1%82%D1%8C_03.jpg" alt="Гиссарская крепость" loading="lazy">
+                        <div class="attraction-card__overlay"></div>
+                    </div>
+                    <div class="attraction-card__content">
+                        <h3 class="attraction-card__title" data-i18n="attraction.hissar.title">Гиссарская крепость</h3>
+                        <p class="attraction-card__description" data-i18n="attraction.hissar.desc">Древняя крепость с мечетью и медресе недалеко от Душанбе</p>
+                        <div class="attraction-card__meta">
+                            <span class="attraction-card__location" data-i18n="attraction.location.rrp">РРП</span>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="attraction-karakul.html" class="attraction-card">
+                    <div class="attraction-card__image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/%D0%9E%D0%B7%D0%B5%D1%80%D0%BE_%D0%9A%D0%B0%D1%80%D0%B0%D0%BA%D1%83%D0%BB%D1%8C.%D0%A2%D0%B0%D0%B4%D0%B6%D0%B8%D0%BA%D0%B8%D1%81%D1%82%D0%B0%D0%BD_%283%29.jpg" alt="Озеро Каракуль" loading="lazy">
+                        <div class="attraction-card__overlay"></div>
+                    </div>
+                    <div class="attraction-card__content">
+                        <h3 class="attraction-card__title" data-i18n="attraction.karakul.title">Озеро Каракуль</h3>
+                        <p class="attraction-card__description" data-i18n="attraction.karakul.desc">Одно из крупнейших высокогорных озер в мире (3914 м)</p>
+                        <div class="attraction-card__meta">
+                            <span class="attraction-card__location" data-i18n="attraction.location.pamir">Памир</span>
+                        </div>
+                    </div>
+                
+                <a href="attraction-fan-lakes.html" class="attraction-card">
+                    <div class="attraction-card__image">
+                        <img src="https://i.photographers.ua/thumbnails/pictures/7178/800ximg_7806.jpg" alt="Алаудинские озера" loading="lazy">
+                        <div class="attraction-card__overlay"></div>
+                    </div>
+                    <div class="attraction-card__content">
+                        <h3 class="attraction-card__title" data-i18n="attraction.fanLakes.title">Алаудинские озера</h3>
+                        <p class="attraction-card__description" data-i18n="attraction.fanLakes.desc">Каскад из семи озер в Фанских горах</p>
+                        <div class="attraction-card__meta">
+                            <span class="attraction-card__location" data-i18n="attraction.location.fan">Фанские горы</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advantages -->
+    <section class="advantages">
+        <div class="container">
+            <h2 class="section-title" data-i18n="advantages.title">Почему выбирают CROWNTOUR</h2>
+            <div class="advantages__grid">
+                <div class="advantage-item">
+                    <div class="advantage-item__icon">🛡</div>
+                    <h3 class="advantage-item__title" data-i18n="advantage.payment.title">Безопасная оплата</h3>
+                    <p class="advantage-item__text" data-i18n="advantage.payment.text">Защищенная система оплаты для вашего спокойствия</p>
+                </div>
+                <div class="advantage-item">
+                    <div class="advantage-item__icon">⭐️</div>
+                    <h3 class="advantage-item__title" data-i18n="advantage.guides.title">Профессиональные гиды</h3>
+                    <p class="advantage-item__text" data-i18n="advantage.guides.text">Только эксперты с многолетним опытом</p>
+                </div>
+                <div class="advantage-item">
+                    <div class="advantage-item__icon">💬</div>
+                    <h3 class="advantage-item__title" data-i18n="advantage.support.title">Поддержка 24/7</h3>
+                    <p class="advantage-item__text" data-i18n="advantage.support.text">Мы всегда готовы помочь вам</p>
+                </div>
+                <div class="advantage-item">
+                    <div class="advantage-item__icon">✅</div>
+                    <h3 class="advantage-item__title" data-i18n="advantage.quality.title">Гарантия качества</h3>
+                    <p class="advantage-item__text" data-i18n="advantage.quality.text">Полная гарантия на все услуги</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2 class="section-title" data-i18n="how.title">Как оформить тур</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step__number">1</div>
+                    <h3 class="step__title" data-i18n="step.1.title">Выберите тур</h3>
+                    <p class="step__text" data-i18n="step.1.text">Более 130 уникальных туров по Таджикистану</p>
+                </div>
+                <div class="step">
+                    <div class="step__number">2</div>
+                    <h3 class="step__title" data-i18n="step.2.title">Уточните детали</h3>
+                    <p class="step__text" data-i18n="step.2.text">Свяжитесь с гидом и обсудите все вопросы</p>
+                </div>
+                <div class="step">
+                    <div class="step__number">3</div>
+                    <h3 class="step__title" data-i18n="step.3.title">Забронируйте</h3>
+                    <p class="step__text" data-i18n="step.3.text">Предоплата от 30% от стоимости тура</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Currency & Weather Widgets -->
+    <section class="widgets">
+        <div class="container">
+            <div class="widgets__grid">
+                <div class="widget widget--currency">
+                    <div class="widget__header">
+                        <h3 class="widget__title" data-i18n="widget.currency">💱 Курс валют</h3>
+                        <span class="widget__update" id="currencyUpdate" data-i18n="widget.updating">Обновление...</span>
+                    </div>
+                    <div class="widget__content" id="currencyContent">
+                        <div class="currency-item">
+                            <span class="currency-name">USD → TJS</span>
+                            <span class="currency-rate" id="usdRate">—</span>
+                        </div>
+                        <div class="currency-item">
+                            <span class="currency-name">EUR → TJS</span>
+                            <span class="currency-rate" id="eurRate">—</span>
+                        </div>
+                        <div class="currency-item">
+                            <span class="currency-name">RUB → TJS</span>
+                            <span class="currency-rate" id="rubRate">—</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="widget widget--weather">
+                    <div class="widget__header">
+                        <h3 class="widget__title" data-i18n="widget.weather">🌤 Погода в Душанбе</h3>
+                        <span class="widget__update" id="weatherUpdate" data-i18n="widget.updating">Обновление...</span>
+                    </div>
+                    <div class="widget__content" id="weatherContent">
+                        <div class="weather-main">
+                            <div class="weather-icon" id="weatherIcon">☀️</div>
+                            <div class="weather-temp" id="weatherTemp">—</div>
+                            <div class="weather-desc" id="weatherDesc">Загрузка...</div>
+                        </div>
+                        <div class="weather-details">
+                            <div class="weather-detail">
+                                <span data-i18n="widget.feelsLike">Ощущается:</span>
+                                <span id="weatherFeels">—</span>
+                            </div>
+                            <div class="weather-detail">
+                                <span data-i18n="widget.humidity">Влажность:</span>
+                                <span id="weatherHumidity">—</span>
+                            </div>
+                            <div class="weather-detail">
+                                <span data-i18n="widget.wind">Ветер:</span>
+                                <span id="weatherWind">—</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="widget widget--flights">
+                    <div class="widget__header">
+                        <h3 class="widget__title" data-i18n="widget.flights">✈️ Авиабилеты</h3>
+                    </div>
+                    <div class="widget__content">
+                        <div class="flights-main">
+                            <div class="flights-icon" aria-hidden="true">
+                                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2L16 11z"/></svg>
+                            </div>
+                            <div class="flights-highlight" data-i18n="widget.flightsHighlight">Душанбе → мир</div>
+                            <div class="flights-desc" data-i18n="widget.flightsDesc">Подберите авиабилеты по лучшим ценам</div>
+                        </div>
+                        <div class="flights-details">
+                            <div class="flights-detail">
+                                <span data-i18n="widget.flightsFrom">Из Душанбе:</span>
+                                <span>Aviasales</span>
+                            </div>
+                            <div class="flights-detail">
+                                <span data-i18n="widget.flightsSearch">Поиск:</span>
+                                <span>728+ авиакомпаний</span>
+                            </div>
+                        </div>
+                        <a href="https://www.aviasales.ru/search/DYU" target="_blank" rel="noopener noreferrer" class="widget__link widget__link--aviasales">
+                            <span data-i18n="widget.aviasalesLink">Перейти на Aviasales</span>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <div class="footer__logo">
+                        <span class="logo-text">CROWN<span class="logo-accent">TOUR</span></span>
+                        <span class="logo-subtitle" data-i18n="logo.subtitle">Таджикистан</span>
+                    </div>
+                    <p class="footer__description" data-i18n="footer.description">Ваш надежный партнер в путешествиях по Таджикистану</p>
+                    <div class="footer__social">
+                        <a href="#" class="social-link" data-i18n="social.facebook">Facebook</a>
+                        <a href="https://www.instagram.com/_crowntour_tj?utm_source=qr&igsh=dzh1Y3lqdmxzNmhu" class="social-link" target="_blank" rel="noopener noreferrer" data-i18n="social.instagram">Instagram</a>
+                        <a href="https://t.me/+992002663407" class="social-link" target="_blank" rel="noopener noreferrer" data-i18n="social.telegram">Telegram</a>
+                        <a href="https://wa.me/992002663407" class="social-link" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+                    </div>
+                </div>
+                
+                <div class="footer__links">
+                    <div class="footer__column">
+                        <h4 class="footer__title" data-i18n="footer.company">Компания</h4>
+                        <ul class="footer__list">
+                            <li><a href="#tours" data-i18n="nav.tours">Туры</a></li>
+                            <li><a href="#regions" data-i18n="nav.regions">Регионы</a></li>
+                            <li><a href="#objects" data-i18n="nav.objects">Достопримечательности</a></li>
+                            <li><a href="blog.html" data-i18n="nav.blog">Блог</a></li>
+                            <li><a href="faq.html" data-i18n="footer.faq">Часто задаваемые вопросы</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__column">
+                        <h4 class="footer__title" data-i18n="footer.contacts">Контакты</h4>
+                        <ul class="footer__list">
+                            <li><a href="https://wa.me/992002663407" target="_blank" rel="noopener noreferrer">(+992) 00 266 34 07</a></li>
+                            <li><a href="mailto:info@crowntour.tj">info@crowntour.tj</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p data-i18n="footer.copyright">&copy; 2026 CROWNTOUR. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="transl.js"></script>
+    <script src="script.js?v=7"></script>
+    <script src="widgets.js?v=1"></script>
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html xml:lang="ru" lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="theme-color" content="#dc143c">
+    <meta name="description" content="Блог и отзывы клиентов CROWNTOUR. Читайте отзывы о турах по Таджикистану и оставляйте свои впечатления.">
+    <title>Блог и отзывы — CROWNTOUR Таджикистан</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏔</text></svg>">
+    <link rel="stylesheet" href="kh.css?v=7.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="header__wrapper">
+                    <a href="khushik.html" class="header__logo">
+                        <span class="logo-text">CROWN<span class="logo-accent">TOUR</span></span>
+                        <span class="logo-subtitle">Таджикистан</span>
+                    </a>
+                    <nav class="header__nav">
+                        <ul class="nav__list">
+                            <li><a href="khushik.html#tours" class="nav__link">Туры</a></li>
+                            <li><a href="khushik.html#regions" class="nav__link">Регионы</a></li>
+                            <li><a href="khushik.html#objects" class="nav__link">Достопримечательности</a></li>
+                            <li><a href="blog.html" class="nav__link nav__link--active">Блог</a></li>
+                            <li><a href="faq.html" class="nav__link" data-i18n="nav.faq">Вопросы</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header__actions">
+                        <a href="https://wa.me/992002663407" target="_blank" rel="noopener noreferrer" class="header__phone">(+992) 00 266 34 07</a>
+                        <a href="khushik.html" class="btn btn--primary">На главную</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="region-hero blog-hero">
+        <div class="region-hero__image blog-hero__image">
+            <img src="https://ucare.timepad.ru/883e42a3-34bb-42c4-b044-f136735d90e8/-/preview/" alt="Туры по Таджикистану">
+            <div class="region-hero__overlay"></div>
+        </div>
+        <div class="container">
+            <div class="region-hero__content">
+                <h1 class="region-hero__title">Блог и отзывы</h1>
+                <p class="region-hero__subtitle">Отзывы наших клиентов о путешествиях с CROWNTOUR</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="blog-section" id="reviews">
+        <div class="container">
+            <div class="blog__layout">
+                <div class="blog__main">
+                    <div class="blog__form-card">
+                        <h2 class="blog__form-title">Оставьте свой отзыв</h2>
+                        <p class="blog__form-desc">Поделитесь впечатлениями о поездке — это поможет другим путешественникам.</p>
+                        <form class="blog-form" id="reviewForm">
+                            <div class="blog-form__row">
+                                <div class="blog-form__group">
+                                    <label for="reviewName" class="blog-form__label">Ваше имя *</label>
+                                    <input type="text" id="reviewName" name="name" class="blog-form__input" required placeholder="Как к вам обращаться?">
+                                </div>
+                                <div class="blog-form__group">
+                                    <label for="reviewEmail" class="blog-form__label">Email *</label>
+                                    <input type="email" id="reviewEmail" name="email" class="blog-form__input" required placeholder="example@mail.com">
+                                </div>
+                            </div>
+                            <div class="blog-form__group">
+                                <label class="blog-form__label">Оценка *</label>
+                                <div class="blog-form__stars" id="starRating">
+                                    <button type="button" class="star-btn" data-rating="1" aria-label="1 звезда">★</button>
+                                    <button type="button" class="star-btn" data-rating="2" aria-label="2 звезды">★</button>
+                                    <button type="button" class="star-btn" data-rating="3" aria-label="3 звезды">★</button>
+                                    <button type="button" class="star-btn" data-rating="4" aria-label="4 звезды">★</button>
+                                    <button type="button" class="star-btn" data-rating="5" aria-label="5 звёзд">★</button>
+                                </div>
+                                <input type="hidden" id="reviewRating" name="rating" value="0" required>
+                            </div>
+                            <div class="blog-form__group">
+                                <label for="reviewTour" class="blog-form__label">Тур или направление (необязательно)</label>
+                                <input type="text" id="reviewTour" name="tour" class="blog-form__input" placeholder="Например: Памирский тракт, Искандеркуль">
+                            </div>
+                            <div class="blog-form__group">
+                                <label for="reviewText" class="blog-form__label">Ваш отзыв *</label>
+                                <textarea id="reviewText" name="text" class="blog-form__textarea" required rows="5" placeholder="Расскажите о впечатлениях, гидах, маршруте..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn--primary blog-form__submit">Отправить отзыв</button>
+                            <p id="formMessage" class="blog-form__message" aria-live="polite"></p>
+                        </form>
+                    </div>
+
+                    <div class="blog__reviews">
+                        <h2 class="blog__reviews-title">Отзывы клиентов</h2>
+                        <div class="blog-reviews-list" id="reviewsList">
+                            <!-- Reviews rendered by JS -->
+                        </div>
+                        <p class="blog__empty" id="reviewsEmpty">Пока нет отзывов. Будьте первым!</p>
+                    </div>
+                </div>
+                <aside class="blog__sidebar">
+                    <div class="region-info-card">
+                        <h3 class="region-info-card__title">Почему нам доверяют</h3>
+                        <div class="region-info-card__content">
+                            <p>Более 130 туров по Таджикистану. Профессиональные гиды, безопасная оплата и поддержка 24/7.</p>
+                        </div>
+                    </div>
+                    <div class="region-info-card" style="background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark)); color: white;">
+                        <h3 class="region-info-card__title" style="color: white;">Забронировать тур</h3>
+                        <div class="region-info-card__content">
+                            <p>Готовы открыть Таджикистан?</p>
+                            <p style="margin-top: 1rem;"><a href="https://wa.me/992002663407" target="_blank" rel="noopener noreferrer" style="color: white; font-weight: 600; text-decoration: none;">(+992) 00 266 34 07</a></p>
+                            <p><a href="mailto:info@crowntour.tj" style="color: white; text-decoration: underline;">info@crowntour.tj</a></p>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <div class="footer__logo">
+                        <span class="logo-text">CROWN<span class="logo-accent">TOUR</span></span>
+                        <span class="logo-subtitle">Таджикистан</span>
+                    </div>
+                    <p class="footer__description">Ваш надёжный партнёр в путешествиях по Таджикистану</p>
+                </div>
+                <div class="footer__links">
+                    <div class="footer__column">
+                        <h4 class="footer__title">Навигация</h4>
+                        <ul class="footer__list">
+                            <li><a href="khushik.html#tours">Туры</a></li>
+                            <li><a href="khushik.html#regions">Регионы</a></li>
+                            <li><a href="khushik.html#objects">Достопримечательности</a></li>
+                            <li><a href="blog.html">Блог</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__column">
+                        <h4 class="footer__title">Контакты</h4>
+                        <ul class="footer__list">
+                            <li><a href="https://wa.me/992002663407" target="_blank" rel="noopener noreferrer">(+992) 00 266 34 07</a></li>
+                            <li><a href="mailto:info@crowntour.tj">info@crowntour.tj</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2026 CROWNTOUR. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="blog.js"></script>
+</body>
+</html>
